@@ -1,39 +1,102 @@
 {
-  "profileImage": "/images/efeeleprofile.webp",
-  "profileAlt": "Photo of Fernando Aldair López Ponce (EFEELE) for the blog",
-  "profileLink": "/about-me",
-  "profileTitle": "FrontEnd Developer",
-  "profileName": "Fernando López",
-  "github": "https://github.com/EFEELE/NeonMint",
-  "githubText": "Do you like this blog's design?",
+  "profileImage": "/images/profile.webp",
+  "profileAlt": "Chirag Gulati - Senior Software Engineer and Tech Lead",
+  "profileLink": "#about",
+  "profileTitle": "Senior Software Engineer & Tech Lead",
+  "profileName": "Chirag Gulati",
+  "github": "https://github.com/chirag198",
+  "githubText": "Building secure, scalable systems in cloud & DevSecOps",
   "portfolioImage": "/images/portfolio.webp",
-  "email": "hello@efeele.dev",
-  "linkedin": "https://www.linkedin.com/in/efeele/",
-  "instagram": "https://www.instagram.com/efeele.dev/",
-  "youtube": "https://www.youtube.com/@efeeledev",
-  "alias": "EFEELE",
-  "contactSectionTitle": "Ready to take your idea to the next level?",
-  "contactSectionSubtitle": "Let's work together.",
-  "contactSectionButtonText": "Contact Me",
-  "contactSectionButtonIcon": "paperplane",
-  "techsTitle": "TECHS",
+  "email": "cgulati198@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/chirag-gulati-695620149/",
+  "instagram": "",
+  "youtube": "",
+  "alias": "Chirag Gulati",
+  "contactSectionTitle": "Let's Build Something Great",
+  "contactSectionSubtitle": "I'm open to interesting opportunities in cloud security and scalable systems.",
+  "contactSectionButtonText": "Get In Touch",
+  "contactSectionButtonIcon": "tabler:send",
+  "techsTitle": "Tech Stack",
   "instagramIconName": "instagram",
   "youtubeIconName": "youtube",
   "githubIconName": "github",
   "linkedinIconName": "linkedin",
-  "emailIconName": "envelope",
-  "hobbies": [
-    "Writing",
-    "Camping",
-    "Coffee",
-    "Music",
-    "Movies",
-    "Board Games"
+  "allFeaturedProjectsTitle": "Featured Projects",
+  "allBlogsTitle": "Blog",
+  "allAchievementsTitle": "Achievements",
+  "achievementSection": {
+    "title": "Achievements & Expertise",
+    "achievements": [
+      "Architected 15+ microservices for global FMCG operations at Reckitt",
+      "Built multi-tenant RBAC system for AccuKnox SaaS platform",
+      "Integrated cloud security tools (Trivy, SecurityHub, CloudSploit)",
+      "Mentored global engineering teams on DevSecOps best practices",
+      "Designed high-scale ETL pipelines handling multi-TB datasets",
+      "6+ years of experience in cloud security and system architecture"
+    ]
+  },
+  "experience": [
+    {
+      "jobTitle": "Senior Software Engineer",
+      "company": "EPAM Systems (Reckitt)",
+      "location": "Bengaluru",
+      "startDate": "Oct 2024",
+      "endDate": "Present",
+      "description": "Lead engineer for Trinity RGMx Platform, architecting 15+ microservices for global pricing, promotions, and supply chain operations. Resolved critical production SSL/auth issues, built Gurobi-powered simulation engines, and integrated CNAPP/CSPM security across pipelines."
+    },
+    {
+      "jobTitle": "Senior Software Engineer",
+      "company": "Accuknox",
+      "location": "Cupertino",
+      "startDate": "Nov 2022",
+      "endDate": "Oct 2024",
+      "description": "Led development and team management for Cloud Security Posture Management (CSPM) solution. Architected robust on-premises multi-tenancy system with comprehensive RBAC. Integrated open-source security tools and mentored Python team on best practices."
+    },
+    {
+      "jobTitle": "Senior Software Engineer",
+      "company": "Pectus Finance GmbH",
+      "location": "Berlin",
+      "startDate": "Jun 2022",
+      "endDate": "Nov 2022",
+      "description": "Developed serverless APIs for financial data analysis and reporting. Designed upload manager for 500k+ record datasets. Created KPI Builder and prediction microservices for financial forecasting."
+    },
+    {
+      "jobTitle": "Senior Software Engineer",
+      "company": "Cashify",
+      "location": "Bengaluru",
+      "startDate": "Oct 2019",
+      "endDate": "Jun 2022",
+      "description": "Built and deployed Django REST Framework projects at scale. Integrated AWS services (Route53, Fargate, RDS, Redshift). Implemented payment gateways, OTP auth, UPI integrations, and comprehensive CI/CD pipelines."
+    }
   ],
-  "pageTitle": "NeonMint by | Fernando Lopez | EFEELE",
-  "pageDescription": "Is a modern, minimalist template crafted for developers and digital creatives.",
-  "OGImage": {
-    "url": "/images/imagedefault.webp",
-    "alt": "Screenshot of a web portfolio with a modern and dark design. Featuring Fernando López, a Frontend Developer with 8 years of experience, highlighting his passion for development and technology. Includes contact sections, projects, and a technology stack with technologies like HTML5, JavaScript, TypeScript, Angular, Node.js, CSS, Tailwind, and more."
-  }
+  "skills": {
+    "languages": ["python", "go", "javascript", "typescript"],
+    "frameworks": ["fastapi", "django", "nodejs"],
+    "cloud": ["aws", "kubernetes", "docker"],
+    "devops": ["jenkins", "cicd", "containerization"],
+    "security": ["cnapp", "cspm", "rbac", "devsecops"],
+    "databases": ["postgresql", "redis", "redshift"]
+  },
+  "projects": [
+    {
+      "name": "Trinity RGMx Platform",
+      "description": "Global Revenue Growth Management system deployed across 100 countries for Reckitt. 15+ Kubernetes microservices for pricing optimization, promotional planning, and supply chain management.",
+      "tags": ["kubernetes", "python", "fastapi", "postgresql", "gurobi"]
+    },
+    {
+      "name": "AccuKnox CSPM Platform",
+      "description": "Cloud security solution offering comprehensive protection for cloud accounts and Kubernetes clusters. Integrated Trivy, AWS Security Hub, CloudSploit for automated scanning and remediation.",
+      "tags": ["python", "kubernetes", "security", "linux", "devsecops"]
+    },
+    {
+      "name": "Pectus Finance KPI Engine",
+      "description": "Serverless financial forecasting engine with dataset ingestion pipelines, KPI builder, and prediction microservices leveraging NumPy and Pandas for data analysis.",
+      "tags": ["python", "serverless", "numpy", "pandas", "aws"]
+    },
+    {
+      "name": "Cashify Backoffice Platform",
+      "description": "Scalable Django-based system for device trading operations including payment gateways, OTP authentication, UPI integrations, maps, and comprehensive logistics management.",
+      "tags": ["django", "aws", "docker", "jenkins", "postgresql"]
+    }
+  ]
 }
