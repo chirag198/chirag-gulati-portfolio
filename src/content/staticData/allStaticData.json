@@ -1,102 +1,35 @@
 {
-  "profileImage": "/images/profile.webp",
-  "profileAlt": "Chirag Gulati - Senior Software Engineer and Tech Lead",
-  "profileLink": "#about",
+  "profileImage": "/images/efeeleprofile.webp",
+  "profileAlt": "Chirag Gulati - Senior Software Engineer",
+  "profileLink": "/about-me",
   "profileTitle": "Senior Software Engineer & Tech Lead",
   "profileName": "Chirag Gulati",
   "github": "https://github.com/chirag198",
-  "githubText": "Building secure, scalable systems in cloud & DevSecOps",
+  "githubText": "Building scalable systems in cloud & DevSecOps",
   "portfolioImage": "/images/portfolio.webp",
   "email": "cgulati198@gmail.com",
   "linkedin": "https://www.linkedin.com/in/chirag-gulati-695620149/",
   "instagram": "",
   "youtube": "",
   "alias": "Chirag Gulati",
-  "contactSectionTitle": "Let's Build Something Great",
-  "contactSectionSubtitle": "I'm open to interesting opportunities in cloud security and scalable systems.",
-  "contactSectionButtonText": "Get In Touch",
+  "contactSectionTitle": "Ready to work together?",
+  "contactSectionSubtitle": "Let's connect and build amazing projects.",
+  "contactSectionButtonText": "Contact Me",
   "contactSectionButtonIcon": "tabler:send",
   "techsTitle": "Tech Stack",
   "instagramIconName": "instagram",
   "youtubeIconName": "youtube",
   "githubIconName": "github",
   "linkedinIconName": "linkedin",
+  "emailIconName": "envelope",
+  "hobbies": ["Python", "Cloud Security", "DevOps"],
+  "pageTitle": "Chirag Gulati | Senior Software Engineer & Tech Lead",
+  "pageDescription": "Professional portfolio showcasing expertise in cloud security, microservices, and system architecture.",
+  "OGImage": {
+    "url": "/images/portfolio.webp",
+    "alt": "Chirag Gulati's Portfolio"
+  },
   "allFeaturedProjectsTitle": "Featured Projects",
-  "allBlogsTitle": "Blog",
-  "allAchievementsTitle": "Achievements",
-  "achievementSection": {
-    "title": "Achievements & Expertise",
-    "achievements": [
-      "Architected 15+ microservices for global FMCG operations at Reckitt",
-      "Built multi-tenant RBAC system for AccuKnox SaaS platform",
-      "Integrated cloud security tools (Trivy, SecurityHub, CloudSploit)",
-      "Mentored global engineering teams on DevSecOps best practices",
-      "Designed high-scale ETL pipelines handling multi-TB datasets",
-      "6+ years of experience in cloud security and system architecture"
-    ]
-  },
-  "experience": [
-    {
-      "jobTitle": "Senior Software Engineer",
-      "company": "EPAM Systems (Reckitt)",
-      "location": "Bengaluru",
-      "startDate": "Oct 2024",
-      "endDate": "Present",
-      "description": "Lead engineer for Trinity RGMx Platform, architecting 15+ microservices for global pricing, promotions, and supply chain operations. Resolved critical production SSL/auth issues, built Gurobi-powered simulation engines, and integrated CNAPP/CSPM security across pipelines."
-    },
-    {
-      "jobTitle": "Senior Software Engineer",
-      "company": "Accuknox",
-      "location": "Cupertino",
-      "startDate": "Nov 2022",
-      "endDate": "Oct 2024",
-      "description": "Led development and team management for Cloud Security Posture Management (CSPM) solution. Architected robust on-premises multi-tenancy system with comprehensive RBAC. Integrated open-source security tools and mentored Python team on best practices."
-    },
-    {
-      "jobTitle": "Senior Software Engineer",
-      "company": "Pectus Finance GmbH",
-      "location": "Berlin",
-      "startDate": "Jun 2022",
-      "endDate": "Nov 2022",
-      "description": "Developed serverless APIs for financial data analysis and reporting. Designed upload manager for 500k+ record datasets. Created KPI Builder and prediction microservices for financial forecasting."
-    },
-    {
-      "jobTitle": "Senior Software Engineer",
-      "company": "Cashify",
-      "location": "Bengaluru",
-      "startDate": "Oct 2019",
-      "endDate": "Jun 2022",
-      "description": "Built and deployed Django REST Framework projects at scale. Integrated AWS services (Route53, Fargate, RDS, Redshift). Implemented payment gateways, OTP auth, UPI integrations, and comprehensive CI/CD pipelines."
-    }
-  ],
-  "skills": {
-    "languages": ["python", "go", "javascript", "typescript"],
-    "frameworks": ["fastapi", "django", "nodejs"],
-    "cloud": ["aws", "kubernetes", "docker"],
-    "devops": ["jenkins", "cicd", "containerization"],
-    "security": ["cnapp", "cspm", "rbac", "devsecops"],
-    "databases": ["postgresql", "redis", "redshift"]
-  },
-  "projects": [
-    {
-      "name": "Trinity RGMx Platform",
-      "description": "Global Revenue Growth Management system deployed across 100 countries for Reckitt. 15+ Kubernetes microservices for pricing optimization, promotional planning, and supply chain management.",
-      "tags": ["kubernetes", "python", "fastapi", "postgresql", "gurobi"]
-    },
-    {
-      "name": "AccuKnox CSPM Platform",
-      "description": "Cloud security solution offering comprehensive protection for cloud accounts and Kubernetes clusters. Integrated Trivy, AWS Security Hub, CloudSploit for automated scanning and remediation.",
-      "tags": ["python", "kubernetes", "security", "linux", "devsecops"]
-    },
-    {
-      "name": "Pectus Finance KPI Engine",
-      "description": "Serverless financial forecasting engine with dataset ingestion pipelines, KPI builder, and prediction microservices leveraging NumPy and Pandas for data analysis.",
-      "tags": ["python", "serverless", "numpy", "pandas", "aws"]
-    },
-    {
-      "name": "Cashify Backoffice Platform",
-      "description": "Scalable Django-based system for device trading operations including payment gateways, OTP authentication, UPI integrations, maps, and comprehensive logistics management.",
-      "tags": ["django", "aws", "docker", "jenkins", "postgresql"]
-    }
-  ]
+  "allBlogsTitle": "Articles",
+  "allAchievementsTitle": "Achievements"
 }
