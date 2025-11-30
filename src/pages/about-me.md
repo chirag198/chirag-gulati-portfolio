@@ -4,7 +4,7 @@ title: "Chirag Gulati | Senior Software Engineer & Tech Lead 🚀"
 description: "Senior Software Engineer and Tech Lead with 6+ years of experience in cloud security, DevSecOps, and scalable system architecture. Expertise in Python, Kubernetes, and building enterprise-grade solutions."
 author: "Chirag Gulati"
 image:
-  url: "/public/IMG_0320.jpg"
+  url: "/IMG_0320.jpg"
   alt: "Chirag Gulati - Senior Software Engineer & Tech Lead"
 ---
 
