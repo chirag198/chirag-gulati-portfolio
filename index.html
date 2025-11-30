@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chirag Gulati | Senior Software Engineer & Tech Lead</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a0033 50%, #0f0f23 100%);
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 2px solid #00ffcc;
+            margin-bottom: 40px;
+        }
+        
+        .hero {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #00ffcc, #00ff99);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+        }
+        
+        .title {
+            font-size: 1.8em;
+            color: #00ffcc;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.4);
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #b0b0b0;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info a {
+            color: #00ffcc;
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid #00ffcc;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info a:hover {
+            background: #00ffcc;
+            color: #0f0f23;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.6);
+        }
+        
+        section {
+            margin-bottom: 80px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 3px solid #00ffcc;
+            border-radius: 5px;
+        }
+        
+        h2 {
+            font-size: 2.5em;
+            color: #00ffcc;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+            border-bottom: 2px solid #00ff99;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #00ffcc;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .experience-item, .project-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(0, 255, 204, 0.05);
+            border-radius: 5px;
+            border-left: 3px solid #00ff99;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .skill-tag {
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #00ffcc, #00ff99);
+            color: #0f0f23;
+            border-radius: 25px;
+            text-align: center;
+            font-weight: 600;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .skill-tag:hover {
+            box-shadow: 0 0 25px rgba(0, 255, 204, 0.8);
+            transform: translateY(-3px);
+        }
+        
+        .achievement-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .achievement-list li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #c0c0c0;
+        }
+        
+        .achievement-list li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #00ffcc;
+            font-size: 1.5em;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .social-links a {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #00ffcc;
+            border-radius: 50%;
+            color: #00ffcc;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.2em;
+        }
+        
+        .social-links a:hover {
+            background: #00ffcc;
+            color: #0f0f23;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.6);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 2px solid #00ffcc;
+            color: #808080;
+            margin-top: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; }
+            h2 { font-size: 1.8em; }
+            .title { font-size: 1.3em; }
+            section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="hero">
+                <h1>Chirag Gulati</h1>
+                <p class="title">Senior Software Engineer & Tech Lead</p>
+                <p class="subtitle">Building scalable systems in cloud & DevOps</p>
+                
+                <div class="contact-info">
+                    <a href="mailto:cgulati198@gmail.com">Email</a>
+                    <a href="https://www.linkedin.com/in/chirag-gulati-695620149/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/chirag198" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </header>
+        
+        <section>
+            <h2>About Me</h2>
+            <p>I am a Senior Software Engineer and Tech Lead based in Bengaluru, India. With extensive experience in cloud architecture, DevOps, and scalable system design, I specialize in building robust solutions that drive business impact. My passion lies in mentoring teams, optimizing system performance, and leveraging cutting-edge technologies to solve complex challenges.</p>
+        </section>
+        
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">Cloud Security</div>
+                <div class="skill-tag">DevOps</div>
+                <div class="skill-tag">Microservices</div>
+                <div class="skill-tag">System Design</div>
+                <div class="skill-tag">AWS</div>
+                <div class="skill-tag">Kubernetes</div>
+                <div class="skill-tag">Docker</div>
+                <div class="skill-tag">CI/CD</div>
+                <div class="skill-tag">Team Leadership</div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Senior Software Engineer & Tech Lead</h3>
+                <p style="color: #00ffcc; margin-bottom: 10px;">Bengaluru, India</p>
+                <p>Led cross-functional teams in designing and implementing scalable cloud solutions. Architected microservices platforms handling millions of requests, optimized system performance by 40%, and mentored junior engineers in cloud best practices and DevOps methodologies.</p>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Key Responsibilities</h3>
+                <ul class="achievement-list">
+                    <li>Design and architect cloud-native applications on AWS</li>
+                    <li>Lead DevOps initiatives and CI/CD pipeline optimization</li>
+                    <li>Mentor development teams and conduct code reviews</li>
+                    <li>Optimize system performance and ensure high availability</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Featured Projects</h2>
+            
+            <div class="project-item">
+                <h3>Microservices Platform</h3>
+                <p>Designed and implemented a microservices-based platform serving 1M+ daily users. Implemented containerization with Docker and orchestration with Kubernetes, reducing deployment time by 50%.</p>
+            </div>
+            
+            <div class="project-item">
+                <h3>Cloud Infrastructure Optimization</h3>
+                <p>Architected a cost-optimized cloud infrastructure resulting in 35% reduction in cloud spending while maintaining performance and reliability.</p>
+            </div>
+            
+            <div class="project-item">
+                <h3>DevOps Pipeline Implementation</h3>
+                <p>Built a comprehensive CI/CD pipeline using GitLab/GitHub Actions, enabling 100+ deployments per day with zero-downtime releases.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Achievements & Certifications</h2>
+            <ul class="achievement-list">
+                <li>Led team of 8+ engineers in successful cloud migration project</li>
+                <li>Implemented automated testing framework increasing code coverage by 60%</li>
+                <li>Recognized as Top Performer for 3 consecutive years</li>
+                <li>AWS Certified Solutions Architect</li>
+                <li>Kubernetes (CKAD) Certified</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Get In Touch</h2>
+            <p style="text-align: center; margin-bottom: 20px;">Let's connect! Whether you have a project proposal, job opportunity, or just want to network.</p>
+            
+            <div class="contact-info" style="justify-content: center;">
+                <a href="mailto:cgulati198@gmail.com">Email Me</a>
+                <a href="https://www.linkedin.com/in/chirag-gulati-695620149/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/chirag198" target="_blank">View My Work</a>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2024 Chirag Gulati. All rights reserved. Based in Bengaluru, India.</p>
+        </footer>
+    </div>
+</body>
+</html>
