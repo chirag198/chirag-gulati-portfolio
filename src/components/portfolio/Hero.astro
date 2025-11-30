@@ -1,0 +1,295 @@
+---
+import { config } from "../../utils/config";
+---
+
+<section class="hero-section" id="home">
+  <div class="hero-banner"></div>
+  <div class="container hero-container">
+    <div class="hero-content">
+      <div class="profile-section">
+        <div class="profile-image-wrapper">
+          <img src="/IMG_0320.jpg" alt="Chirag Gulati Profile Picture" class="profile-image" />
+        </div>
+      </div>
+      <div class="hero-text">
+        <h1 class="hero-title glowing-text">{config.name}</h1>
+        <p class="hero-subtitle">{config.title}</p>
+        <p class="hero-description">{config.description}</p>
+
+        <!-- Contact Buttons -->
+        <div class="contact-buttons">
+          <a href={`mailto:${config.email}`} class="btn btn-primary">Email</a>
+          <a href={config.linkedIn} target="_blank" rel="noopener noreferrer" class="btn btn-primary">LinkedIn</a>
+          <a href={config.github} target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub</a>
+          <a href={config.resumeDownloadUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary">Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  :root {
+    --primary-color: #00ffcc;
+    --secondary-color: #00d4ff;
+    --dark-bg: #0a0e27;
+    --card-bg: #1a1f3a;
+    --text-light: #e0e0e0;
+    --text-muted: #999;
+    --border-color: rgba(0, 255, 204, 0.2);
+    --glow-color: rgba(0, 255, 204, 0.4);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px 60px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/355B662B-956E-4B70-AB16-99960B17C5D9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    z-index: 0;
+    filter: blur(2px);
+  }
+
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(0, 255, 204, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    top: -150px;
+    right: -150px;
+    animation: float 8s ease-in-out infinite;
+    z-index: 1;
+  }
+
+  .hero-section::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    bottom: -100px;
+    left: -100px;
+    animation: float 10s ease-in-out infinite reverse;
+    z-index: 1;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) scale(1);
+    }
+    50% {
+      transform: translateY(40px) scale(1.1);
+    }
+  }
+
+  .hero-container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  /* Profile Picture Styles */
+  .profile-section {
+    display: flex;
+    justify-content: center;
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  .profile-image-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+    background-size: 200% 200%;
+    animation: gradient-shift 5s ease infinite, glow-pulse 3s ease-in-out infinite;
+    box-shadow: 0 0 40px rgba(0, 255, 204, 0.4), 0 0 80px rgba(0, 212, 255, 0.2);
+  }
+
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--dark-bg);
+    transition: transform 0.3s ease;
+  }
+
+  .profile-image-wrapper:hover .profile-image {
+    transform: scale(1.05);
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  .glowing-text {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: glow-pulse 3s ease-in-out infinite, gradient-shift 5s ease infinite;
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% {
+      filter: drop-shadow(0 0 15px rgba(0, 255, 204, 0.4));
+    }
+    50% {
+      filter: drop-shadow(0 0 30px rgba(0, 255, 204, 0.8));
+    }
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-subtitle {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 700;
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 650px;
+    margin-bottom: 50px;
+    line-height: 1.8;
+    animation: fadeInUp 0.8s ease-out 0.4s backwards;
+  }
+
+  .contact-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    animation: fadeInUp 0.8s ease-out 0.6s backwards;
+  }
+
+  .btn {
+    padding: 14px 32px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 204, 0.3), transparent);
+    transition: left 0.5s ease;
+  }
+
+  .btn:hover::before {
+    left: 100%;
+  }
+
+  .btn-primary:hover {
+    background: var(--primary-color);
+    color: var(--dark-bg);
+    box-shadow: 0 0 30px rgba(0, 255, 204, 0.6), 0 5px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    border-color: var(--primary-color);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.3rem;
+    }
+
+    .profile-image-wrapper {
+      width: 150px;
+      height: 150px;
+    }
+
+    .contact-buttons {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+</style>
