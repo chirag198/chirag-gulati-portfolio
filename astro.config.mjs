@@ -7,8 +7,8 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://chirag198.github.io",
-  base: "/chirag-gulati-portfolio",
+  site: "https://chiraggulati.in",
+  base: "/",
   integrations: [preact(), icon(), sitemap({
     filter: (page) =>
       !page.includes("/blog/tags") &&
