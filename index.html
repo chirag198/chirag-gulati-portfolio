@@ -112,6 +112,37 @@
             border-radius: 5px;
             border-left: 3px solid #00ff99;
         }
+
+            /* Enhanced project item styling */
+    .project-item p {
+      color: #a0a0a0;
+      font-size: 0.95em;
+      line-height: 1.7;
+      margin-top: 10px;
+      font-weight: 400;
+    }
+    
+    .project-item h3 {
+      color: #00ffcc;
+      font-size: 1.3em;
+      margin-bottom: 8px;
+    }
+    
+    .project-item {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .project-item:hover {
+      background: rgba(0, 255, 204, 0.1);
+      border-left-color: #00ffff;
+      box-shadow: 0 8px 24px rgba(0, 255, 204, 0.15);
+      transform: translateX(8px);
+    }
+    
+    .experience-item p {
+      color: #a8a8a8;
+      line-height: 1.7;
+    }
         
         .skills-grid {
             display: grid;
@@ -354,7 +385,8 @@
             <h2>Featured Projects</h2>
             
             <div class="project-item">
-                <h3>Trinity RGMx Platform - Reckitt
+                <h3>Trinity RGMx Platform - Reckitt</h3>
+                
                 <p>Enterprise Revenue Growth Management system deployed across 100 countries for FMCG operations. Architected 15 microservices on Kubernetes with PostgreSQL, integrated Gurobi optimization for promotional simulations, and embedded security (CNAPP/CSPM) with PCAS token authentication and RBAC.</p>
             </div>
             
