@@ -1,6 +1,6 @@
 {
   "profileImage": "/images/efeeleprofile.webp",
-  "profileAlt": "Chirag Gulati - Senior Software Engineer",
+  "profileAlt": "Chirag Gulati",
   "profileLink": "/about-me",
   "profileTitle": "Senior Software Engineer & Tech Lead",
   "profileName": "Chirag Gulati",
@@ -13,7 +13,7 @@
   "youtube": "https://github.com/chirag198",
   "alias": "Chirag Gulati",
   "contactSectionTitle": "Ready to work together?",
-  "contactSectionSubtitle": "Let's connect and build amazing projects.",
+  "contactSectionSubtitle": "Let's build something amazing.",
   "contactSectionButtonText": "Contact Me",
   "contactSectionButtonIcon": "tabler:send",
   "techsTitle": "Tech Stack",
@@ -22,13 +22,10 @@
   "githubIconName": "github",
   "linkedinIconName": "linkedin",
   "emailIconName": "envelope",
-  "hobbies": ["Python", "Cloud Security", "DevOps", "Microservices", "System Design"],
+  "hobbies": ["Python", "Cloud Security", "DevOps"],
   "pageTitle": "Chirag Gulati | Senior Software Engineer & Tech Lead",
-  "pageDescription": "Professional portfolio showcasing expertise in cloud security, microservices, and system architecture.",
-  "OGImage": {
-    "url": "/images/portfolio.webp",
-    "alt": "Chirag Gulati's Portfolio"
-  },
+  "pageDescription": "Professional portfolio for Chirag Gulati",
+  "OGImage": { "url": "/images/portfolio.webp", "alt": "Chirag Gulati" },
   "allFeaturedProjectsTitle": "Featured Projects",
   "allBlogsTitle": "Articles",
   "allAchievementsTitle": "Achievements"
