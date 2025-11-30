@@ -9,6 +9,8 @@
   "portfolioImage": "/images/portfolio.webp",
   "email": "cgulati198@gmail.com",
   "linkedin": "https://www.linkedin.com/in/chirag-gulati-695620149/",
+  "instagram": "https://github.com/chirag198",
+  "youtube": "https://github.com/chirag198",
   "alias": "Chirag Gulati",
   "contactSectionTitle": "Ready to work together?",
   "contactSectionSubtitle": "Let's connect and build amazing projects.",
@@ -20,7 +22,7 @@
   "githubIconName": "github",
   "linkedinIconName": "linkedin",
   "emailIconName": "envelope",
-  "hobbies": ["Python", "Cloud Security", "DevOps"],
+  "hobbies": ["Python", "Cloud Security", "DevOps", "Microservices", "System Design"],
   "pageTitle": "Chirag Gulati | Senior Software Engineer & Tech Lead",
   "pageDescription": "Professional portfolio showcasing expertise in cloud security, microservices, and system architecture.",
   "OGImage": {
