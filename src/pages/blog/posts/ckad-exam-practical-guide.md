@@ -4,7 +4,7 @@ title: 'CKAD Exam: A Practical Guide to Passing on Your First Attempt'
 author: 'Chirag Gulati'
 description: 'A hands-on guide to passing the Certified Kubernetes Application Developer (CKAD) exam on your first try. Learn the strategies, commands, and mindset that actually work.'
 image:
-    url: '/IMG_20240922_152952.jpg'
+    url: '/public/355B662B-956E-4B70-AB16-99960B17C5D9.jpg'
     alt: 'CKAD Kubernetes Certification Guide'
 pubDate: 2024-11-15
 tags: ['Kubernetes', 'CKAD', 'Certification', 'DevOps', 'Cloud Native']
