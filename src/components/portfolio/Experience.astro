@@ -2,23 +2,14 @@
 import ExperienceItem from "./ExperienceItem.astro";
 import Heading from "../ui/Heading.astro";
 import { Icon } from "astro-icon/components";
+import { experiences } from "../../utils/experience";
 
-const EXPERIENCE = [
-  {
-    date: "2021 - Present",
-    title: "Software Development Coordinator",
-    company: "EFEELE.DEV",
-    description:
-      "I lead the planning, development, and implementation of software projects to optimize administrative processes and improve digital services. I manage and provide support for technology platforms, coordinating development teams to deliver efficient solutions.",
-  },
-  {
-    date: "2019 - 2020",
-    title: "Software Development Coordinator",
-    company: "EFEELE.DEV",
-    description:
-      "I lead the planning, development, and implementation of software projects to optimize administrative processes and improve digital services. I manage and provide support for technology platforms, coordinating development teams to deliver efficient solutions.",
-  },
-];
+const EXPERIENCE = experiences.map((exp) => ({
+  date: exp.period,
+  title: exp.position,
+  company: exp.company,
+  description: exp.description,
+}));
 ---
 
 <section class="py-8 px-8 max-md:py-4 mb-4 scroll-m-16" id="experience">
