@@ -110,8 +110,20 @@ export const languages: Record<string, Language> = {
     name: "Python",
     iconName: "python",
   },
+  kubernetes: {
+    name: "Kubernetes",
+    iconName: "code",
+  },
+  bash: {
+    name: "Bash",
+    iconName: "code",
+  },
+  yaml: {
+    name: "YAML",
+    iconName: "markdown",
+  },
 };
 
 export const getLanguage = (lang: string): Language => {
-  return languages[lang] || languages.html;
+  return languages[lang] || { name: lang, iconName: "code" };
 }; 

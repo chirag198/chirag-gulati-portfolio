@@ -8,8 +8,6 @@ image:
   alt: "Chirag Gulati - Senior Software Engineer & Tech Lead"
 ---
 
-## About Me 👨‍💻
-
 I am a **Senior Software Engineer and Tech Lead** based in **Bengaluru, India**, with over **6 years of experience** driving innovative solutions in cloud security and scalable system architecture. My passion lies in building robust, enterprise-grade systems that make a real business impact.
 
 ## Professional Profile 🎯

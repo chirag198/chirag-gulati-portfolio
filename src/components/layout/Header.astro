@@ -8,15 +8,8 @@ import { getCollection } from "astro:content";
 const [staticData] = await getCollection("staticData");
 const { github, githubIconName, linkedin, linkedinIconName } = staticData.data;
 
-const currentPath = Astro.url.pathname;
-const routes = ["/", "/portfolio", "/about-me"];
-
-// Check if the current route is in the list of routes
-const isActiveRoute = routes.includes(currentPath);
-
-const navItems = isActiveRoute
-  ? ["home", "experience", "projects", "about", "blog"]
-  : ["home", "blog", "about"]; // Change the items
+// Consistent navigation items across all pages
+const navItems = ["home", "experience", "projects", "about", "blog"];
 ---
 
 <header

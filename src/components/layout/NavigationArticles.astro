@@ -13,8 +13,6 @@ const currentIndex = sortedPosts.findIndex((post) =>
 );
 const nextPost = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null;
 const prevPost = currentIndex < sortedPosts.length - 1 ? sortedPosts[currentIndex + 1] : null;
-
-console.log({ prevPost, nextPost });
 ---
 
 <nav class="mt-8 flex flex-row gap-2 w-full p-6 max-xl:p-3 max-lg:p-2">
