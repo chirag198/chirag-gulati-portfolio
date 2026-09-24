@@ -1,0 +1,116 @@
+---
+import { config } from "../../utils/config";
+---
+
+<section class="cta" id="contact" aria-labelledby="contact-title" data-pause-offscreen>
+  <div class="cta__card" data-zoom>
+    <span class="cta__glow" aria-hidden="true"></span>
+    <p class="cta__prompt"><span>$</span> ./contact --now</p>
+    <h2 class="cta__title" id="contact-title">Let's build something that <em>ships.</em></h2>
+    <p class="cta__lede">Agent systems, platform architecture, or a team that needs a tech lead — my inbox is open.</p>
+    <a class="cta__email" href={`mailto:${config.email}`}>{config.email}</a>
+    <div class="cta__links">
+      <a href={config.resumeDownloadUrl} target="_blank" rel="noopener noreferrer">resume ↗</a>
+      <a href={config.github} target="_blank" rel="noopener noreferrer">github ↗</a>
+      <a href={config.linkedIn} target="_blank" rel="noopener noreferrer">linkedin ↗</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 32px 24px 96px;
+    scroll-margin-top: 40px;
+  }
+  .cta__card {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 56px 48px;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    background: var(--bg-elev);
+    box-shadow: var(--glow);
+  }
+  .cta__card > :not(.cta__glow) { position: relative; }
+  .cta__glow {
+    position: absolute;
+    z-index: -1;
+    top: -60%;
+    right: -20%;
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg,
+      color-mix(in srgb, var(--accent) 22%, transparent),
+      color-mix(in srgb, var(--accent-2) 18%, transparent),
+      color-mix(in srgb, var(--accent-3) 24%, transparent),
+      color-mix(in srgb, var(--accent-4) 14%, transparent),
+      color-mix(in srgb, var(--accent) 22%, transparent));
+    -webkit-mask: radial-gradient(circle, transparent 0%, #000 28%, transparent 64%);
+    mask: radial-gradient(circle, transparent 0%, #000 28%, transparent 64%);
+    animation: cta-spin 18s linear infinite;
+    will-change: transform;
+  }
+  @keyframes cta-spin {
+    to { transform: rotate(360deg); }
+  }
+  .cta__prompt {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    color: var(--muted);
+    margin: 0 0 16px;
+  }
+  .cta__prompt span { color: var(--accent); }
+  .cta__title em {
+    font-style: normal;
+    background: var(--grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .cta__title {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    font-weight: 750;
+    letter-spacing: -0.035em;
+    line-height: 1.1;
+    color: var(--text);
+    margin: 0;
+    max-width: 18ch;
+  }
+  .cta__lede {
+    color: var(--muted);
+    margin: 14px 0 0;
+    line-height: 1.6;
+    max-width: 52ch;
+  }
+  .cta__email {
+    display: inline-block;
+    margin-top: 28px;
+    font-family: var(--font-mono);
+    font-size: clamp(1rem, 2.4vw, 1.375rem);
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    border-image: var(--grad) 1;
+    padding-bottom: 2px;
+    word-break: break-all;
+  }
+  .cta__email:hover { color: var(--accent); }
+  .cta__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 24px;
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+  }
+  .cta__links a { color: var(--muted); text-decoration: none; }
+  .cta__links a:hover { color: var(--text); }
+  @media (max-width: 640px) {
+    .cta { padding: 16px 16px 64px; }
+    .cta__card { padding: 36px 24px; }
+  }
+</style>

@@ -10,7 +10,7 @@ const { items = [] }: { items: (keyof typeof menu)[] } = Astro.props as {
 };
 
 const menu = {
-  about: { name: "About Me", path: "/about-me" },
+  about: { name: "About", path: "/about-me" },
   blog: {
     name: "Blog",
     path: "/blog/",
@@ -18,19 +18,20 @@ const menu = {
   },
   home: { name: "Home", path: "/#home" },
   experience: { name: "Experience", path: "/#experience" },
-  projects: { name: "Projects", path: "/#projects" },
+  projects: { name: "Work", path: "/#projects" },
+  hobbies: { name: "Builds", path: "/#hobby-builds" },
 };
 
 // Common base classes
 const baseClasses = {
-  nav: "nav-links flex w-full justify-center gap-6 max-md:gap-3 max-md:py-6",
-  link: "px-2 py-2 transition-all hover:text-mint-300 max-md:mx-auto max-md:w-full max-md:px-6 max-md:py-2 ",
+  nav: "nav-links flex w-full justify-center gap-1 max-md:gap-1 max-md:py-4",
+  link: "nav-link relative px-3 py-2 rounded-md transition-colors max-md:mx-auto max-md:w-full max-md:px-6",
   socialContainer: "flex items-center justify-center gap-5 md:hidden",
   dropdown: "relative group flex items-center",
   dropdownMenu:
-    "absolute left-0 top-full hidden group-hover:block bg-white dark:bg-zinc-800 shadow-lg rounded-md py-2 min-w-[200px] z-50",
+    "nav-dropdown absolute left-0 top-full hidden group-hover:block rounded-md py-2 min-w-[200px] z-50",
   dropdownItem:
-    "block px-4 py-2 text-sm hover:bg-mint-100 dark:hover:bg-zinc-700 transition-colors",
+    "nav-link block px-4 py-2 transition-colors",
 } as const;
 ---
 
@@ -40,23 +41,18 @@ const baseClasses = {
 
     // Classes for link states
     const linkClasses = {
-      active: [
-        "text-mint-500",
-        "dark:text-mint-400",
-        "font-bold",
-        "[text-shadow:1px_1px_11px_rgba(208,251,229,0.7)]",
-      ],
-      inactive: ["dark:text-zinc-300", "text-blacktext"],
+      active: ["nav-active"],
+      inactive: [] as string[],
     };
 
     function toggleLinkClasses(link: Element, isActive: boolean) {
       if (isActive) {
         link.classList.add(...linkClasses.active);
-        link.classList.remove(...linkClasses.inactive);
+        if (linkClasses.inactive.length) link.classList.remove(...linkClasses.inactive);
         link.setAttribute("aria-current", "page");
       } else {
         link.classList.remove(...linkClasses.active);
-        link.classList.add(...linkClasses.inactive);
+        if (linkClasses.inactive.length) link.classList.add(...linkClasses.inactive);
         link.removeAttribute("aria-current");
       }
     }
@@ -167,3 +163,19 @@ const baseClasses = {
     <Social link={linkedin} iconName={linkedinIconName} />
   </div>
 </nav>
+
+<style>
+  :global(.nav-link) {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  :global(.nav-link:hover) {
+    color: var(--text);
+    background: var(--bg-sunk);
+  }
+  :global(.nav-dropdown) {
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+  }
+</style>

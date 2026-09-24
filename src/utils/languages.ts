@@ -122,6 +122,58 @@ export const languages: Record<string, Language> = {
     name: "YAML",
     iconName: "markdown",
   },
+  golang: {
+    name: "GoLang",
+    iconName: "code",
+  },
+  react: {
+    name: "React",
+    iconName: "code",
+  },
+  docker: {
+    name: "Docker",
+    iconName: "code",
+  },
+  aws: {
+    name: "AWS",
+    iconName: "cloudflare",
+  },
+  terraform: {
+    name: "Terraform",
+    iconName: "code",
+  },
+  postgresql: {
+    name: "PostgreSQL",
+    iconName: "mysql",
+  },
+  redis: {
+    name: "Redis",
+    iconName: "code",
+  },
+  jenkins: {
+    name: "Jenkins",
+    iconName: "code",
+  },
+  gitlab: {
+    name: "GitLab",
+    iconName: "git",
+  },
+  github: {
+    name: "GitHub",
+    iconName: "github",
+  },
+  fastapi: {
+    name: "FastAPI",
+    iconName: "python",
+  },
+  django: {
+    name: "Django",
+    iconName: "python",
+  },
+  flask: {
+    name: "Flask",
+    iconName: "python",
+  },
 };
 
 export const getLanguage = (lang: string): Language => {

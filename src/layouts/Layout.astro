@@ -4,8 +4,8 @@ import Header from "../components/layout/Header.astro";
 import Footer from "../components/layout/Footer.astro";
 import  SpeedInsights  from "@vercel/speed-insights/astro"
 const {
-  pageTitle = "Chirag Gulati | Senior Software Engineer & Tech Lead",
-  description = "Portfolio of Chirag Gulati - Senior Software Engineer & Tech Lead specializing in cloud architecture, DevSecOps, and scalable systems.",
+  pageTitle = "Chirag Gulati | Senior Architect & Tech Consultant",
+  description = "Portfolio of Chirag Gulati - Senior Architect & Tech Consultant specializing in agentic AI, cloud security, and scalable systems.",
   ogimage = {
     url: "/images/portfolio.webp",
     alt: "Chirag Gulati Portfolio",
@@ -27,7 +27,7 @@ const twitterimage = `${siteUrl}${ogimage.url}`;
 
 <html
   lang="en"
-  class="dark:bg-[#0E0E11] bg-mint-50/5 font-montserrat scroll-smooth"
+  class="font-inter scroll-smooth"
 >
   <head>
     <meta charset="UTF-8" />
@@ -66,7 +66,7 @@ const twitterimage = `${siteUrl}${ogimage.url}`;
     <meta name="twitter:image:alt" content={ogimage.alt} />
     <meta name="twitter:site" content={SEO.twitter} />
   
-    <meta name="theme-color" content="#0E0E11"/>
+    <meta name="theme-color" content="#09090b"/>
 
     <!-- Sitemap -->
     <link rel="sitemap" href="/sitemap-index.xml" />
@@ -74,12 +74,6 @@ const twitterimage = `${siteUrl}${ogimage.url}`;
   </head>
   <body class="overflow-x-hidden">
     <SpeedInsights/>
-    <div class="blur-circle"></div>
-    <div
-      style="  background:linear-gradient(45deg, rgba(96, 250, 155, 0) 10.79%, rgba(96, 250, 170, 0.03) 40.92%, rgba(96, 250, 155, 0) 90.35%)"
-      class="fixed top-0 left-0 w-full h-full pointer-events-none -z-1"
-    >
-    </div>
     <Header />
 
     <div class="min-h-[85vh] ">

@@ -4,7 +4,8 @@ import Hero from "../components/portfolio/Hero.astro";
 import Skills from "../components/portfolio/Skills.astro";
 import Experience from "../components/portfolio/Experience.astro";
 import Projects from "../components/portfolio/Projects.astro";
-import Achievements from "../components/portfolio/Achievements.astro";
+import CallToAction from "../components/portfolio/CallToAction.astro";
+import Marquee from "../components/portfolio/Marquee.astro";
 import { config } from "../utils/config";
 
 const pageTitle = config.name + " | " + config.title;
@@ -16,25 +17,33 @@ const OGImage = {
 ---
 
 <Layout pageTitle={pageTitle} description={pageDescription} ogimage={OGImage}>
-  <main class="main-content">
+  <div class="scroll-progress" aria-hidden="true" data-progress></div>
+  <main>
     <Hero />
+    <Marquee />
     <Skills />
     <Experience />
     <Projects />
-    <Achievements />
+    <CallToAction />
   </main>
-
-  <style>
-    :root {
-      --primary-color: #00ffcc;
-      --secondary-color: #00d4ff;
-      --dark-bg: #0a0e27;
-      --text-light: #e0e0e0;
-    }
-
-    .main-content {
-      background: linear-gradient(135deg, var(--dark-bg) 0%, #0f1735 100%);
-      color: var(--text-light);
-    }
-  </style>
 </Layout>
+
+<script>
+  import "../scripts/motion";
+</script>
+
+<style is:global>
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    z-index: 60;
+    background: var(--grad);
+    transform-origin: left;
+    transform: scaleX(0);
+    box-shadow: 0 0 12px color-mix(in srgb, var(--accent-2) 70%, transparent);
+    pointer-events: none;
+  }
+</style>

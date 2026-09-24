@@ -1,0 +1,56 @@
+---
+import { skills } from "../../utils/skills";
+
+const items = skills.slice(0, 24);
+---
+
+<div class="marquee" aria-hidden="true" data-marquee>
+  <div class="marquee__track" data-marquee-track>
+    {[0, 1].map(() => (
+      <div class="marquee__set">
+        {items.map((s) => (
+          <span class="marquee__item">{s}<i>✦</i></span>
+        ))}
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+  .marquee {
+    overflow: hidden;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-sunk);
+    padding: 18px 0;
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  }
+  .marquee__track {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+  }
+  .marquee__set {
+    display: flex;
+    flex-shrink: 0;
+  }
+  .marquee__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 28px;
+    padding-right: 28px;
+    font-family: var(--font-mono);
+    font-size: 0.9375rem;
+    color: var(--text-2);
+    white-space: nowrap;
+  }
+  .marquee__item i {
+    font-style: normal;
+    color: var(--accent);
+    font-size: 0.75rem;
+  }
+  .marquee__item:nth-child(4n + 2) i { color: var(--accent-2); }
+  .marquee__item:nth-child(4n + 3) i { color: var(--accent-3); }
+  .marquee__item:nth-child(4n + 4) i { color: var(--accent-4); }
+</style>
